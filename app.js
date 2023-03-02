@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 //// mongoosh -DB
 
-mongoose.connect("mongodb+srv://vamsikrishna2644:Vamshi2000@blogdb.qphbvef.mongodb.net/blogDB")
+mongoose.connect("mongodb+srv://vamsikrishna2644:Vamshi2000@blogdb.qphbvef.mongodb.net/?retryWrites=true&w=majority")
 
 const postScheme = mongoose.Schema({
   title: String,
