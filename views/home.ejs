@@ -1,0 +1,24 @@
+<%- include("partials/header")-%>
+
+    <h1>Home</h1>
+    <p class="home-para">
+        HI ! My name is Vamshi Krisna K 🙋🏻‍♂️.This is my Blog-Site.
+        <br>
+        I used express.js for server side, mongoDb 🍃 for Database, mongoose to access the Data and EJS for Templets.
+    </p>
+
+    <% posts.forEach((post)=>{ %>
+
+        <h1>
+            <%= post.title %>
+        </h1>
+        <p>
+            <%= post.content.substring(0,100)+" ..." %>
+                <a name="readme" value="<%= post._id %>" href="/posts/<%=post._id%>">Read More</a>
+        </p>
+
+
+        <% }) %>
+
+
+            <%- include("partials/footer") -%>
