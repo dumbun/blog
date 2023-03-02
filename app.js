@@ -45,11 +45,22 @@ app.get("/about", (req, res) => {
 
 
 app.get("/compose", (req, res) => {
+  res.render("authe")
+})
+app.post("/compose", (req, res) => {
+  if (req.body.email === "blog@vamshi.com" && req.body.password === "Vamshi@2000") {
+    res.redirect("/9021fesaserfa739fadsfaeafwa719hfriuamnoim56346565755645364xiemai")
+  } else {
+    res.redirect("/")
+  }
+})
+
+app.get("/9021fesaserfa739fadsfaeafwa719hfriuamnoim56346565755645364xiemai", (req, res) => {
 
   res.render("compose")
 })
 
-app.post("/compose", (req, res) => {
+app.post("/9021fesaserfa739fadsfaeafwa719hfriuamnoim56346565755645364xiemai", (req, res) => {
 
 
   const title = req.body.postTitle
