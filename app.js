@@ -62,10 +62,8 @@ app.get("/9021fesaserfa739fadsfaeafwa719hfriuamnoim56346565755645364xiemai", (re
 
 app.post("/9021fesaserfa739fadsfaeafwa719hfriuamnoim56346565755645364xiemai", (req, res) => {
 
-
   const title = req.body.postTitle
   const content = req.body.postBody
-  const titleLodash = _.lowerCase(title)
   const compose = new Post({
     title: title,
     content: content
